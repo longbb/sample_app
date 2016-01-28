@@ -1,0 +1,6 @@
+Phương thức merge của hash trong Ruby: 
+Có thể nói nôm na phương thức merge  của  hash  trong ruby là  phương thức  tạo ra 1 hash từ nniều hash khác  nhau.
+Khi các key bị trùng nhau, thì giá trị được đưa vào sau sẽ ghi đè lên giá trị trước.
+Do đó: 
+>> { "a" => 100, "b" => 200 }.merge({ "b" => 300 })
+=> {"a"=>100, "b"=>300}
