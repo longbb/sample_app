@@ -46,6 +46,7 @@ class UsersEditTest < ActionDispatch::IntegrationTest
                                     password_confirmation: "" }
     assert_not flash.empty?
     assert_redirected_to @user
+    assert_not session[:forwarding_url]
     @user.reload
     assert_equal name,  @user.name
     assert_equal email, @user.email
